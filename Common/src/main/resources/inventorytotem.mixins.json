@@ -1,9 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.inventorytotem.forge.mixin",
+  "package": "com.natamus.inventorytotem.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "inventorytotem_forge.refmap.json",
   "mixins": [
 
   ],
