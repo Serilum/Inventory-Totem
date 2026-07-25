@@ -12,10 +12,6 @@ import net.minecraft.world.item.Items;
 
 public class TotemEvent {
 	public static boolean allowPlayerDeath (ServerLevel world, ServerPlayer player) {
-		if (player.getMainHandItem().getItem().equals(Items.TOTEM_OF_UNDYING) || player.getOffhandItem().getItem().equals(Items.TOTEM_OF_UNDYING)) {
-			return true;
-		}
-		
 		Inventory inv = player.getInventory();
 
 		ItemStack totemstack = null;
