@@ -1,9 +1,9 @@
-package com.natamus.inventorytotem;
+package com.serilum.inventorytotem;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.inventorytotem.neoforge.events.NeoForgeTotemEvent;
-import com.natamus.inventorytotem.util.Reference;
+import com.serilum.inventorytotem.neoforge.events.NeoForgeTotemEvent;
+import com.serilum.inventorytotem.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;

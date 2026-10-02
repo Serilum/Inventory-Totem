@@ -1,6 +1,6 @@
-package com.natamus.inventorytotem.forge.events;
+package com.serilum.inventorytotem.forge.events;
 
-import com.natamus.inventorytotem.events.TotemEvent;
+import com.serilum.inventorytotem.events.TotemEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;

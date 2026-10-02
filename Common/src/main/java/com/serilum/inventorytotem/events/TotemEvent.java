@@ -1,4 +1,4 @@
-package com.natamus.inventorytotem.events;
+package com.serilum.inventorytotem.events;
 
 import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.server.level.ServerLevel;
