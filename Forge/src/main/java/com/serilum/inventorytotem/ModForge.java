@@ -1,9 +1,9 @@
-package com.natamus.inventorytotem;
+package com.serilum.inventorytotem;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.inventorytotem.forge.events.ForgeTotemEvent;
-import com.natamus.inventorytotem.util.Reference;
+import com.serilum.inventorytotem.forge.events.ForgeTotemEvent;
+import com.serilum.inventorytotem.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -28,7 +28,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeTotemEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeTotemEvent.class);
 	}
 
 	private static void setGlobalConstants() {
