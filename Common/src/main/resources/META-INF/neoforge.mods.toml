@@ -1,28 +1,28 @@
 modLoader="javafml"
 loaderVersion="*"
-license="All rights reserved"
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Inventory%20Totem"
 logoFile="icon.png"
 
 [[mods]]
 modId="inventorytotem"
-version="3.4"
+version="3.5"
 displayName="Inventory Totem"
 displayURL="https://serilum.com/mod/inventory-totem"
-authors="Rick South"
+authors="Serilum"
 description='''Makes the totem of undying effect work when existing in the player's inventory.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-Alister, Andrean Olgo, aternosorg, Cherriesaurus, David Sanchez, drdog111, Michael W. S., t128, Tyler Behl, XAgent   
+Andrean Olgo, AnyankaT, aternosorg, Cherriesaurus, Linda Jansen, MWS, Tyler Behl   
 
-If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+If you would like to contribute too, check out https://serilum.com/donate Appreciate it! <3   
 '''
 
 [[dependencies.inventorytotem]]
     modId="collective"
     type="required"
-    versionRange="[7.91,)"
+    versionRange="[8.40,)"
     ordering="NONE"
     side="BOTH"
 

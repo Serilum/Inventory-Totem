@@ -1,9 +1,9 @@
-package com.natamus.inventorytotem;
+package com.serilum.inventorytotem;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.inventorytotem.events.TotemEvent;
-import com.natamus.inventorytotem.util.Reference;
+import com.serilum.inventorytotem.events.TotemEvent;
+import com.serilum.inventorytotem.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.server.level.ServerLevel;

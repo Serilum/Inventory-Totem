@@ -1,15 +1,15 @@
-package com.natamus.inventorytotem.neoforge.events;
+package com.serilum.inventorytotem.forge.events;
 
-import com.natamus.inventorytotem.events.TotemEvent;
+import com.serilum.inventorytotem.events.TotemEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
-import net.neoforged.bus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-public class NeoForgeTotemEvent {
+public class ForgeTotemEvent {
 	@SubscribeEvent
 	public static void onPlayerDeath(LivingDeathEvent e) {
 		Entity entity = e.getEntity();
