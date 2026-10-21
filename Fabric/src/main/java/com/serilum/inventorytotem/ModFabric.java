@@ -30,7 +30,7 @@ public class ModFabric implements ModInitializer {
 	private void loadEvents() {
 		ServerLivingEntityEvents.ALLOW_DEATH.register((LivingEntity livingEntity, DamageSource damageSource, float damageAmount) -> {
 			if (livingEntity instanceof ServerPlayer) {
-				return TotemEvent.allowPlayerDeath((ServerLevel)livingEntity.level(), (ServerPlayer)livingEntity);
+				return TotemEvent.allowPlayerDeath((ServerLevel)livingEntity.level(), (ServerPlayer)livingEntity, damageSource);
 			}
 			return true;
 		});
