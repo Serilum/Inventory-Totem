@@ -4,6 +4,8 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,11 +13,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 public class TotemEvent {
-	public static boolean allowPlayerDeath (ServerLevel world, ServerPlayer player) {
+	public static boolean allowPlayerDeath (ServerLevel world, ServerPlayer player, DamageSource damageSource) {
+		if (damageSource.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+			return true;
+		}
+
 		if (player.getMainHandItem().getItem().equals(Items.TOTEM_OF_UNDYING) || player.getOffhandItem().getItem().equals(Items.TOTEM_OF_UNDYING)) {
 			return true;
 		}
-		
+
 		Inventory inv = player.getInventory();
 
 		ItemStack totemstack = null;
@@ -26,7 +32,7 @@ public class TotemEvent {
 				break;
 			}
 		}
-		
+
 		if (totemstack == null) {
 			return true;
 		}

@@ -22,7 +22,7 @@ public class ForgeTotemEvent {
 			return;
 		}
 
-		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity)) {
+		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity, e.getSource())) {
 			e.setCanceled(true);
 		}
 	}
