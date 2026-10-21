@@ -31,7 +31,7 @@ public class ForgeTotemEvent {
 			return false;
 		}
 
-		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity)) {
+		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity, e.getSource())) {
 			return true;
 		}
 		return false;
