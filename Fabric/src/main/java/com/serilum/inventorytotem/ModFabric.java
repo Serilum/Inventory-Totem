@@ -1,9 +1,9 @@
-package com.natamus.inventorytotem;
+package com.serilum.inventorytotem;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.inventorytotem.events.TotemEvent;
-import com.natamus.inventorytotem.util.Reference;
+import com.serilum.inventorytotem.events.TotemEvent;
+import com.serilum.inventorytotem.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.server.level.ServerLevel;
@@ -30,7 +30,7 @@ public class ModFabric implements ModInitializer {
 	private void loadEvents() {
 		ServerLivingEntityEvents.ALLOW_DEATH.register((LivingEntity livingEntity, DamageSource damageSource, float damageAmount) -> {
 			if (livingEntity instanceof ServerPlayer) {
-				return TotemEvent.allowPlayerDeath((ServerLevel)livingEntity.level(), (ServerPlayer)livingEntity);
+				return TotemEvent.allowPlayerDeath((ServerLevel)livingEntity.level(), (ServerPlayer)livingEntity, damageSource);
 			}
 			return true;
 		});

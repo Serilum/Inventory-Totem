@@ -1,6 +1,6 @@
-package com.natamus.inventorytotem.neoforge.events;
+package com.serilum.inventorytotem.neoforge.events;
 
-import com.natamus.inventorytotem.events.TotemEvent;
+import com.serilum.inventorytotem.events.TotemEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -22,7 +22,7 @@ public class NeoForgeTotemEvent {
 			return;
 		}
 
-		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity)) {
+		if (!TotemEvent.allowPlayerDeath((ServerLevel)level, (ServerPlayer)entity, e.getSource())) {
 			e.setCanceled(true);
 		}
 	}

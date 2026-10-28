@@ -1,4 +1,4 @@
-package com.natamus.inventorytotem;
+package com.serilum.inventorytotem;
 
 
 public class ModCommon {
